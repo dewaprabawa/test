@@ -1,0 +1,56 @@
+<html>
+<head>
+    <title>For Loop</title>
+</head>
+<body>
+    <!-- Body -->
+    <input id = "field" placeholder="Enter Name" type="text">
+
+    <div id="container" class ="layer" style="background-color: purple; width: 800px; height: 400px;">
+
+        <h1 id="title" style="text-align: center;color:wheat">Hello World</h1>
+
+    </div>
+
+    <!-- button red -->
+    <button id="action_button_red" style="width: 200;height: 50px; border-radius:20px; background-color:red">ACTION TO RED</button>
+
+    <!-- button yellow -->
+    <button id="action_button_yellow" style="width: 200;height: 50px; border-radius:20px; background-color:yellow">ACTION TO YELLOW</button>
+
+    <!-- button green -->
+    <button id="action_button_green" style="width: 200;height: 50px; border-radius:20px; background-color:green">ACTION TO GREEEN</button>
+
+   
+</body>
+<script>
+  /*const button = document.querySelector("button");*/
+  
+  const redbutton = document.getElementById("action_button_red");
+
+  const yellowbutton = document.getElementById("action_button_yellow");
+  
+  const greenbutton = document.getElementById("action_button_green");
+  
+  redbutton.addEventListener("click", function(){
+   
+    const container = document.getElementById("container");
+    container.style.backgroundColor = "red";
+});
+
+greenbutton.addEventListener("click", function(){
+    console.log("pin");
+    const body = document.getElementById("container");
+    body.style.backgroundColor = "green";
+});
+
+  yellowbutton.addEventListener("click", function(){
+    console.log("pin");
+    const container = document.getElementById("container");
+    container.style.backgroundColor = "yellow";
+});
+
+
+
+</script>
+</html>
